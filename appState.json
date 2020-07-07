@@ -1,0 +1,114 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "90c97b93-ad97-4921-8044-56e42060fc71": {
+        "id": "90c97b93-ad97-4921-8044-56e42060fc71",
+        "parent": null,
+        "name": "NotificationSubmitter.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "NotificationSubmitter.js",
+        "cursor": {
+          "lineNumber": 23,
+          "column": 7
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "NotificationSubmitter"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigusEast1MyAPI",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/notify"
+            }
+          }
+        ],
+        "testCases": {}
+      }
+    },
+    "openFiles": [
+      "90c97b93-ad97-4921-8044-56e42060fc71"
+    ],
+    "currentFileId": "90c97b93-ad97-4921-8044-56e42060fc71",
+    "resources": {
+      "httpApigusEast1MyAPI": {
+        "name": "httpApigusEast1MyAPI",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "MyAPI",
+          "stageName": "$default"
+        }
+      },
+      "snsusEast1Notifications": {
+        "name": "snsusEast1Notifications",
+        "type": "SNS",
+        "config": {
+          "topicMode": 0,
+          "topicName": "Notifications",
+          "topicArn": "arn:aws:sns:us-east-1:CUR_AWS_ACCOUNT:Notifications",
+          "topicRegion": "us-east-1",
+          "snsType": 0,
+          "topicDisplayName": "Notification Topic",
+          "subscriptions": []
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1",
+    "projectName": "SigmaAutoDeployment",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1594115144746
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sigma-auto-deployment",
+      "url": "https://github.com/Udith/sigma-auto-deployment"
+    }
+  }
+}
