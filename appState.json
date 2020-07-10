@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "NotificationSubmitter.js",
         "cursor": {
-          "lineNumber": 23,
-          "column": 7
+          "lineNumber": 19,
+          "column": 49
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -32,7 +32,8 @@
             }
           }
         ],
-        "testCases": {}
+        "testCases": {},
+        "lastUpdated": 1594359227777
       }
     },
     "openFiles": [
@@ -68,7 +69,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -89,12 +90,18 @@
           "version": "2.644.0",
           "dev": true,
           "notRemovable": false
+        },
+        "crypto-random-string": {
+          "name": "crypto-random-string",
+          "version": "3.2.0",
+          "dev": false,
+          "language": "nodejs"
         }
       }
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1",
+    "sigmaVersion": "1.4.2",
     "projectName": "SigmaAutoDeployment",
     "projectDescription": "",
     "projectVersion": "1.0.0",
@@ -102,7 +109,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1594115144746
+    "lastSave": 1594359330826
   },
   "VCS_STATE": {
     "provider": "GitHub",

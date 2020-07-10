@@ -1,5 +1,6 @@
 const AWS = require('aws-sdk');
 const sns = new AWS.SNS();
+const cryptoRandomString = require('crypto-random-string');
 
 exports.handler = async (event) => {
 
@@ -15,7 +16,7 @@ exports.handler = async (event) => {
         }).promise();
 
         console.log("Successfully sent notification");
-        return true;
+        return cryptoRandomString({length: 16});
 
     } catch (err) {
         console.log("Failed to send notification", err);

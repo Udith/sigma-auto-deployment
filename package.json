@@ -1,7 +1,9 @@
 {
   "name": "SigmaAutoDeployment",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "crypto-random-string": "3.2.0"
+  },
   "devDependencies": {
     "aws-sdk": "2.644.0"
   }
