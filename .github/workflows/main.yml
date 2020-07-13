@@ -22,7 +22,7 @@ jobs:
 
       # Installs Sigma CLI
       - name: Install Sigma CLI
-        run: sudo npm i slappforge-sigma-cli -g
+        run: npm i slappforge-sigma-cli -g
 
       # Builds project
       - name: Build Project
