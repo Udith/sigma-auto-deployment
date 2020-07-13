@@ -13,6 +13,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
+    container: nikolaik/python-nodejs:python3.8-nodejs14
 
     steps:
 
