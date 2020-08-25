@@ -41,4 +41,4 @@ jobs:
         env:
           AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        run: sigma aws deploy --depPackage s3://udith.sigma.test/hello/build_CLITestProject_1.0.0_1594023578623.zip --awsKey $AWS_ACCESS_KEY --awsSecret $AWS_SECRET_KEY --autoDepMode true
+        run: sigma aws deploy --depPackage $DEPLOYMENT_PACKAGE --awsKey $AWS_ACCESS_KEY --awsSecret $AWS_SECRET_KEY --autoDepMode true
